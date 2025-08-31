@@ -34,13 +34,25 @@ $ composer install
 $ npm install && npm run build
 ```
 
-3️⃣ Run Migrations & Seeders
+3️⃣ Configure Environment
+
+```bash
+cp .env.example .env
+```
+
+4️⃣ Generate App Key
+
+```bash
+php artisan key:generate
+```
+
+5️⃣ Run Migrations & Seeders
 
 ```bash
 $ php artisan migrate --seed
 ```
 
-4️⃣ Start the development server
+6️⃣ Start the development server
 
 ```bash
 $ composer run dev
